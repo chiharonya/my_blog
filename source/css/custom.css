@@ -13,6 +13,11 @@ body {
     var(--chiron-paper);
 }
 
+::selection {
+  background: #d8ede7;
+  color: var(--chiron-ink);
+}
+
 #page-header {
   background:
     linear-gradient(120deg, rgba(20, 33, 31, 0.74), rgba(47, 111, 115, 0.56)),
@@ -96,6 +101,121 @@ blockquote {
   color: #fff;
 }
 
+.chiron-about-hero {
+  margin-bottom: 1.5rem;
+  padding: 1.6rem;
+  border: 1px solid var(--chiron-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(47, 111, 115, 0.11), rgba(196, 106, 66, 0.08)),
+    rgba(255, 255, 255, 0.62);
+}
+
+.chiron-about-hero h2 {
+  margin: 0.2rem 0 0.7rem;
+  color: var(--chiron-ink);
+  font-size: 1.65rem;
+  line-height: 1.35;
+}
+
+.chiron-about-hero p {
+  margin: 0;
+}
+
+.chiron-kicker {
+  color: var(--chiron-rust);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.chiron-profile-grid,
+.chiron-topic-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0 1.8rem;
+}
+
+.chiron-topic-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.chiron-profile-grid section,
+.chiron-topic-list div {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--chiron-line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.chiron-profile-grid span,
+.chiron-roadmap span {
+  display: block;
+  color: #66736f;
+  font-size: 0.9rem;
+}
+
+.chiron-profile-grid strong {
+  display: block;
+  margin-top: 0.35rem;
+  color: var(--chiron-ink);
+  line-height: 1.55;
+}
+
+.chiron-topic-list h3 {
+  margin: 0 0 0.45rem;
+  color: var(--chiron-ink);
+  font-size: 1.05rem;
+}
+
+.chiron-topic-list p {
+  margin: 0;
+}
+
+.chiron-roadmap {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: roadmap;
+}
+
+.chiron-roadmap li {
+  position: relative;
+  min-height: 3.2rem;
+  padding: 0.9rem 1rem 0.9rem 3.35rem;
+  border: 1px solid var(--chiron-line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.chiron-roadmap li::before {
+  position: absolute;
+  top: 0.92rem;
+  left: 1rem;
+  display: grid;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+  background: var(--chiron-green);
+  color: #fff;
+  content: counter(roadmap);
+  counter-increment: roadmap;
+  font-size: 0.85rem;
+  font-weight: 700;
+  place-items: center;
+}
+
+.chiron-roadmap strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--chiron-ink);
+}
+
 [data-theme="dark"] {
   --chiron-ink: #edf7f4;
   --chiron-paper: #101817;
@@ -116,6 +236,18 @@ blockquote {
   color: #edf7f4;
 }
 
+[data-theme="dark"] .chiron-about-hero,
+[data-theme="dark"] .chiron-profile-grid section,
+[data-theme="dark"] .chiron-topic-list div,
+[data-theme="dark"] .chiron-roadmap li {
+  background: rgba(16, 24, 23, 0.74);
+}
+
+[data-theme="dark"] .chiron-profile-grid span,
+[data-theme="dark"] .chiron-roadmap span {
+  color: #b7c6c2;
+}
+
 @media (max-width: 768px) {
   #page-header.full_page {
     min-height: 460px;
@@ -127,5 +259,22 @@ blockquote {
 
   #site-subtitle {
     font-size: 1rem;
+  }
+
+  .chiron-profile-grid,
+  .chiron-topic-list {
+    grid-template-columns: 1fr;
+  }
+
+  .chiron-about-hero,
+  .chiron-profile-grid section,
+  .chiron-topic-list div,
+  .chiron-roadmap li {
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
+  }
+
+  .chiron-roadmap li {
+    padding-left: 3rem;
   }
 }
