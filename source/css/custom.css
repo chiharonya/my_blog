@@ -4,13 +4,22 @@
   --chiron-ink: #22302e;
   --chiron-paper: #f7faf8;
   --chiron-line: rgba(47, 111, 115, 0.16);
+  --chiron-hero-image: url("/images/site/chiron-hero.jpg");
+}
+
+html {
+  background: #07171c var(--chiron-hero-image) center center / cover fixed no-repeat;
 }
 
 body {
-  background:
-    linear-gradient(135deg, rgba(47, 111, 115, 0.08), transparent 36%),
-    linear-gradient(315deg, rgba(196, 106, 66, 0.08), transparent 34%),
-    var(--chiron-paper);
+  background: var(--chiron-hero-image) center center / cover fixed no-repeat;
+}
+
+#web_bg {
+  position: fixed;
+  inset: 0;
+  z-index: -999;
+  background: var(--chiron-hero-image) center center / cover no-repeat !important;
 }
 
 ::selection {
@@ -19,45 +28,60 @@ body {
 }
 
 #page-header {
-  background:
-    linear-gradient(120deg, rgba(20, 33, 31, 0.74), rgba(47, 111, 115, 0.56)),
-    radial-gradient(circle at 20% 20%, rgba(216, 237, 231, 0.35), transparent 30%),
-    linear-gradient(135deg, #2f6f73 0%, #22302e 58%, #c46a42 100%) !important;
+  background: transparent !important;
 }
 
 #page-header.full_page {
-  height: 72vh !important;
-  min-height: 520px;
+  height: 100vh !important;
+  min-height: 620px;
 }
 
 #site-title {
   letter-spacing: 0;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.42);
 }
 
 #site-subtitle {
   color: rgba(255, 255, 255, 0.88);
+  text-shadow: 0 6px 22px rgba(0, 0, 0, 0.38);
 }
 
 #nav.show {
-  box-shadow: 0 8px 24px rgba(34, 48, 46, 0.08);
+  background: rgba(7, 17, 21, 0.72);
+  box-shadow: 0 8px 24px rgba(7, 17, 21, 0.18);
+  backdrop-filter: blur(14px);
 }
 
-#recent-posts > .recent-post-item,
+#recent-posts .recent-post-item,
 .card-widget,
 #post,
 #page {
-  border: 1px solid var(--chiron-line);
-  box-shadow: 0 12px 32px rgba(34, 48, 46, 0.08);
+  border: 1px solid rgba(216, 237, 231, 0.24);
+  background: rgba(255, 255, 255, 0.74) !important;
+  box-shadow: 0 18px 46px rgba(4, 13, 17, 0.24);
+  backdrop-filter: blur(18px);
 }
 
-#recent-posts > .recent-post-item:hover,
+#recent-posts .recent-post-item:hover,
 .card-widget:hover {
-  box-shadow: 0 18px 40px rgba(34, 48, 46, 0.12);
+  box-shadow: 0 24px 54px rgba(4, 13, 17, 0.32);
 }
 
+.avatar-img {
+  animation: none !important;
+}
+
+.avatar-img img,
 .card-info-avatar img {
   border: 3px solid rgba(47, 111, 115, 0.18);
   background: #fff;
+  transform: rotate(0deg);
+  transition: filter 375ms ease-in 0.2s, transform 0.45s ease;
+}
+
+.avatar-img img:hover,
+.card-info-avatar img:hover {
+  transform: rotate(360deg);
 }
 
 .card-info-name {
@@ -89,8 +113,9 @@ blockquote {
 
 #footer {
   background:
-    linear-gradient(135deg, rgba(34, 48, 46, 0.94), rgba(47, 111, 115, 0.9)),
-    #22302e;
+    linear-gradient(135deg, rgba(4, 13, 17, 0.9), rgba(18, 58, 66, 0.88)),
+    transparent;
+  backdrop-filter: blur(12px);
 }
 
 #footer-wrap {
@@ -104,11 +129,12 @@ blockquote {
 .chiron-about-hero {
   margin-bottom: 1.5rem;
   padding: 1.6rem;
-  border: 1px solid var(--chiron-line);
+  border: 1px solid rgba(216, 237, 231, 0.24);
   border-radius: 8px;
   background:
     linear-gradient(135deg, rgba(47, 111, 115, 0.11), rgba(196, 106, 66, 0.08)),
-    rgba(255, 255, 255, 0.62);
+    rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
 }
 
 .chiron-about-hero h2 {
@@ -146,9 +172,10 @@ blockquote {
 .chiron-topic-list div {
   min-width: 0;
   padding: 1rem;
-  border: 1px solid var(--chiron-line);
+  border: 1px solid rgba(216, 237, 231, 0.24);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(14px);
 }
 
 .chiron-profile-grid span,
@@ -188,9 +215,10 @@ blockquote {
   position: relative;
   min-height: 3.2rem;
   padding: 0.9rem 1rem 0.9rem 3.35rem;
-  border: 1px solid var(--chiron-line);
+  border: 1px solid rgba(216, 237, 231, 0.24);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(14px);
 }
 
 .chiron-roadmap li::before {
@@ -223,10 +251,19 @@ blockquote {
 }
 
 [data-theme="dark"] body {
-  background:
-    linear-gradient(135deg, rgba(47, 111, 115, 0.18), transparent 40%),
-    linear-gradient(315deg, rgba(196, 106, 66, 0.12), transparent 36%),
-    #101817;
+  background: var(--chiron-hero-image) center center / cover fixed no-repeat;
+}
+
+[data-theme="dark"] #web_bg {
+  background: var(--chiron-hero-image) center center / cover no-repeat !important;
+}
+
+[data-theme="dark"] #recent-posts .recent-post-item,
+[data-theme="dark"] .card-widget,
+[data-theme="dark"] #post,
+[data-theme="dark"] #page {
+  border-color: rgba(216, 237, 231, 0.16);
+  background: rgba(16, 24, 23, 0.78) !important;
 }
 
 [data-theme="dark"] .card-info-name,
