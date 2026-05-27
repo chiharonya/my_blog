@@ -4,10 +4,19 @@ date: 2026-05-27 14:00:00
 type: about
 ---
 
-<div class="chiron-about-hero">
-  <p class="chiron-kicker">About Chiron</p>
-  <h2>你好，我是 Chiron。</h2>
-  <p>CBC（在中中国人），AI享受者，主义主义者，国家八级退堂鼓表演艺术家，VRC 1000+h，IMSB。随缘更新。</p>
+<div class="chiron-about-hero chiron-id-card">
+  <div class="chiron-id-copy">
+    <p class="chiron-kicker">About Chiron</p>
+    <h2>你好，我是 Chiron。</h2>
+    <p>CBC（在中中国人），AI享受者，主义主义者，国家八级退堂鼓表演艺术家，VRC 1000+h，IMSB。随缘更新。</p>
+    <div class="chiron-badges" aria-label="身份标签">
+      <span>AI enjoyer</span>
+      <span>VRC 1000+h</span>
+      <span>vibe coding</span>
+      <span>随缘写作者</span>
+    </div>
+  </div>
+  <img class="chiron-id-avatar" src="/images/site/avatar.jpg" alt="Chiron 的头像">
 </div>
 
 <div class="chiron-profile-grid">
@@ -23,6 +32,46 @@ type: about
     <span>更新节奏</span>
     <strong>看心情</strong>
   </section>
+</div>
+
+## 当前属性
+
+<div class="chiron-stat-panel">
+  <div class="chiron-stat">
+    <div class="chiron-stat-head">
+      <span>AI 应用开发</span>
+      <strong>86%</strong>
+    </div>
+    <div class="chiron-stat-track"><span style="--stat-value: 86%;"></span></div>
+  </div>
+  <div class="chiron-stat">
+    <div class="chiron-stat-head">
+      <span>VRC 沉浸度</span>
+      <strong>1000h+</strong>
+    </div>
+    <div class="chiron-stat-track"><span style="--stat-value: 92%;"></span></div>
+  </div>
+  <div class="chiron-stat">
+    <div class="chiron-stat-head">
+      <span>个人知识库折腾力</span>
+      <strong>78%</strong>
+    </div>
+    <div class="chiron-stat-track"><span style="--stat-value: 78%;"></span></div>
+  </div>
+  <div class="chiron-stat">
+    <div class="chiron-stat-head">
+      <span>退堂鼓熟练度</span>
+      <strong>国家八级</strong>
+    </div>
+    <div class="chiron-stat-track"><span style="--stat-value: 95%;"></span></div>
+  </div>
+  <div class="chiron-stat">
+    <div class="chiron-stat-head">
+      <span>稳定更新概率</span>
+      <strong>玄学</strong>
+    </div>
+    <div class="chiron-stat-track"><span style="--stat-value: 38%;"></span></div>
+  </div>
 </div>
 
 ## 我会写什么
@@ -55,5 +104,22 @@ type: about
   <li><strong>发布流程</strong><span>接入 GitHub 和 Cloudflare Pages 自动部署，减少重复操作。</span></li>
   <li><strong>素材管理</strong><span>建立稳定的图片与附件管理方式，让文章可以长期维护。</span></li>
 </ol>
+
+## 找到我
+
+<div class="chiron-contact-grid">
+  <a href="https://github.com/chiharonya" target="_blank" rel="noopener" class="chiron-contact-card">
+    <i class="fab fa-github"></i>
+    <span><strong>GitHub</strong><small>看一些项目和折腾痕迹</small></span>
+  </a>
+  <a href="mailto:huachengrong@foxmail.com" class="chiron-contact-card">
+    <i class="fas fa-envelope"></i>
+    <span><strong>Email</strong><small>适合认真一点的交流</small></span>
+  </a>
+  <a href="https://space.bilibili.com/1136962842?spm_id_from=333.788.upinfo.detail.click" target="_blank" rel="noopener" class="chiron-contact-card">
+    <i class="fab fa-bilibili"></i>
+    <span><strong>Bilibili</strong><small>偶尔出没的地方</small></span>
+  </a>
+</div>
 
 网页绝赞更新中。
