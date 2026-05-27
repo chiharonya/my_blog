@@ -4,17 +4,15 @@
 
 # Site
 title: Chiron
-subtitle: 'Anon Tokyo!!!!!'
-description: 'Chiron 的个人博客，记录技术实践、阅读笔记、生活观察和长期思考。'
+subtitle: '我的博客小站'
+description: 'Chiron 的个人博客，记录一切我觉得值得记录的。'
 keywords:
   - 个人博客
   - 技术
-  - 前端
+  - 文化产品
   - 工程实践
-  - 阅读
+  - 消费电子
   - 生活
-  - Hexo
-  - Butterfly
 author: Chiron
 language: zh-CN
 timezone: Asia/Shanghai
