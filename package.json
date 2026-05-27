@@ -6,6 +6,7 @@
     "build": "hexo clean && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "deploy:pages": "npx wrangler pages deploy public --project-name chiron-blog --branch main",
     "server": "hexo server --host 127.0.0.1",
     "preview": "hexo server --host 127.0.0.1 --port 4000"
   },
