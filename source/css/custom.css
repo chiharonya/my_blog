@@ -1,0 +1,131 @@
+:root {
+  --chiron-green: #2f6f73;
+  --chiron-rust: #c46a42;
+  --chiron-ink: #22302e;
+  --chiron-paper: #f7faf8;
+  --chiron-line: rgba(47, 111, 115, 0.16);
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgba(47, 111, 115, 0.08), transparent 36%),
+    linear-gradient(315deg, rgba(196, 106, 66, 0.08), transparent 34%),
+    var(--chiron-paper);
+}
+
+#page-header {
+  background:
+    linear-gradient(120deg, rgba(20, 33, 31, 0.74), rgba(47, 111, 115, 0.56)),
+    radial-gradient(circle at 20% 20%, rgba(216, 237, 231, 0.35), transparent 30%),
+    linear-gradient(135deg, #2f6f73 0%, #22302e 58%, #c46a42 100%) !important;
+}
+
+#page-header.full_page {
+  height: 72vh !important;
+  min-height: 520px;
+}
+
+#site-title {
+  letter-spacing: 0;
+}
+
+#site-subtitle {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+#nav.show {
+  box-shadow: 0 8px 24px rgba(34, 48, 46, 0.08);
+}
+
+#recent-posts > .recent-post-item,
+.card-widget,
+#post,
+#page {
+  border: 1px solid var(--chiron-line);
+  box-shadow: 0 12px 32px rgba(34, 48, 46, 0.08);
+}
+
+#recent-posts > .recent-post-item:hover,
+.card-widget:hover {
+  box-shadow: 0 18px 40px rgba(34, 48, 46, 0.12);
+}
+
+.card-info-avatar img {
+  border: 3px solid rgba(47, 111, 115, 0.18);
+  background: #fff;
+}
+
+.card-info-name {
+  color: var(--chiron-ink);
+}
+
+.card-info-description {
+  color: #596865;
+}
+
+.article-title,
+.article-sort-item-title,
+#post-info .post-title {
+  color: var(--chiron-ink);
+}
+
+.article-meta-wrap,
+.post-meta {
+  color: #6f7774;
+}
+
+a:hover {
+  color: var(--chiron-rust);
+}
+
+blockquote {
+  border-left-color: var(--chiron-green);
+}
+
+#footer {
+  background:
+    linear-gradient(135deg, rgba(34, 48, 46, 0.94), rgba(47, 111, 115, 0.9)),
+    #22302e;
+}
+
+#footer-wrap {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#footer-wrap a {
+  color: #fff;
+}
+
+[data-theme="dark"] {
+  --chiron-ink: #edf7f4;
+  --chiron-paper: #101817;
+  --chiron-line: rgba(216, 237, 231, 0.12);
+}
+
+[data-theme="dark"] body {
+  background:
+    linear-gradient(135deg, rgba(47, 111, 115, 0.18), transparent 40%),
+    linear-gradient(315deg, rgba(196, 106, 66, 0.12), transparent 36%),
+    #101817;
+}
+
+[data-theme="dark"] .card-info-name,
+[data-theme="dark"] .article-title,
+[data-theme="dark"] .article-sort-item-title,
+[data-theme="dark"] #post-info .post-title {
+  color: #edf7f4;
+}
+
+@media (max-width: 768px) {
+  #page-header.full_page {
+    min-height: 460px;
+  }
+
+  #site-title {
+    font-size: 2rem;
+  }
+
+  #site-subtitle {
+    font-size: 1rem;
+  }
+}
