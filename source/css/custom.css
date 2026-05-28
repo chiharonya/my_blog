@@ -467,6 +467,38 @@ blockquote {
   color: #d8ede7;
 }
 
+#waifu {
+  left: 1rem;
+  bottom: -0.4rem;
+  z-index: 90;
+  transform-origin: left bottom;
+}
+
+#live2d {
+  width: 300px;
+  height: 300px;
+}
+
+#waifu-toggle {
+  left: 1rem;
+}
+
+#waifu-tips {
+  border: 1px solid rgba(47, 111, 115, 0.16);
+  border-radius: 8px;
+  color: var(--chiron-ink);
+  box-shadow: 0 12px 28px rgba(4, 13, 17, 0.18);
+}
+
+#waifu-tool,
+#waifu-toggle {
+  display: none !important;
+}
+
+#waifu.is-dragging {
+  transition: none;
+}
+
 @media (max-width: 768px) {
   #page-header.full_page {
     min-height: 460px;
@@ -508,5 +540,28 @@ blockquote {
 
   .chiron-roadmap li {
     padding-left: 3rem;
+  }
+
+  #waifu {
+    left: 0.1rem;
+    transform: translateY(3px) scale(0.72);
+  }
+
+  #live2d {
+    width: 300px;
+    height: 300px;
+  }
+
+  #waifu:hover {
+    transform: translateY(0) scale(0.72);
+  }
+
+  #waifu-toggle {
+    left: 0.1rem;
+  }
+
+  #waifu-tips {
+    margin-left: 0;
+    width: 220px;
   }
 }

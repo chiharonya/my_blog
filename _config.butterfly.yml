@@ -1084,7 +1084,7 @@ inject:
   head:
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
-    # - <script src="xxxx"></script>
+    - <script defer src="/js/chiron-live2d.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work

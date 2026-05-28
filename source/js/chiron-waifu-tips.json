@@ -1,0 +1,311 @@
+{
+  "mouseover": [
+    {
+      "selector": "#live2d",
+      "text": [
+        "嗯？找我吗？我在调一瓶不分心药水。",
+        "轻一点轻一点，药瓶差点晃洒了。",
+        "今天也来看看 Chiron 写了什么吗？我先占个左下角。",
+        "我负责看火候，你负责慢慢读。"
+      ]
+    },
+    {
+      "selector": "#blog-info a, .nav-site-title, .nav-page-title",
+      "text": [
+        "这里是 Chiron's Blog，我的临时炼金台也摆在这里。",
+        "点这里可以回到博客的入口。",
+        "自建博客，有没有懂的。反正我懂一点点。"
+      ]
+    },
+    {
+      "selector": "#menus a[href='/'], #sidebar-menus a[href='/']",
+      "text": [
+        "回首页看看最新文章吧，我把门口擦亮了。",
+        "首页是这座小站的前厅，别在门口摔倒。"
+      ]
+    },
+    {
+      "selector": "#menus a[href='/archives/'], #sidebar-menus a[href='/archives/']",
+      "text": [
+        "归档像时间轴，能看到博客一点点长出来。",
+        "想按时间翻文章的话，走这里。我已经把灰尘吹掉了。"
+      ]
+    },
+    {
+      "selector": "#menus a[href='/tags/'], #sidebar-menus a[href='/tags/'], .card-tag-cloud a",
+      "text": [
+        "标签是给想法贴的小便签，贴歪了也算风格。",
+        "要去看看 <span>{text}</span> 相关的内容吗？我可以帮你递梯子。"
+      ]
+    },
+    {
+      "selector": "#menus a[href='/categories/'], #sidebar-menus a[href='/categories/'], .card-category-list a",
+      "text": [
+        "分类更像书架，文章会慢慢摆整齐。大概。",
+        "点开 <span>{text}</span> 看看吧，我保证不乱翻。"
+      ]
+    },
+    {
+      "selector": "#menus a[href='/about/'], #sidebar-menus a[href='/about/']",
+      "text": [
+        "关于页里有一点 Chiron 的自我介绍，我只偷看了一点点。",
+        "想认识写博客的人，可以从这里开始。"
+      ]
+    },
+    {
+      "selector": "#search-button, #search-button .search, #search-button span, #search-button i",
+      "text": [
+        "找不到文章的话，搜索会比翻箱倒柜快一点，也比翻我的药柜安全。",
+        "试着搜 Hexo、Cloudflare 或 ChatGPT？"
+      ]
+    },
+    {
+      "selector": ".recent-post-item",
+      "text": [
+        "这张文章卡片可以点进去慢慢读。",
+        "先别急着滑走，里面可能有一点有用的配方。",
+        "标题、摘要、封面都在这里，像一瓶贴好标签的药水。"
+      ]
+    },
+    {
+      "selector": ".article-title",
+      "text": [
+        "要看看 <span>{text}</span> 吗？",
+        "这篇的标题看起来有点料。",
+        "点标题就能进正文，我已经把门推开一点了。"
+      ]
+    },
+    {
+      "selector": ".post_cover img, .thumbnail img, #article-container img",
+      "text": [
+        "图片也是文章的一部分，像药水瓶上的插画。",
+        "这张图给文章加了一点现场感。"
+      ]
+    },
+    {
+      "selector": ".card-info, .avatar-img, .card-info-avatar, .author-info-name",
+      "text": [
+        "这里是站主名片。此人长期素食，我记下了。",
+        "头像区，确认过眼神，是 Chiron 的地盘。"
+      ]
+    },
+    {
+      "selector": "#card-info-btn, .card-info-social-icons a, #site_social_icons a",
+      "text": [
+        "这里可以找到 Chiron 的外部据点。不是秘密基地，应该不是。",
+        "GitHub、邮件、Bilibili，都在这附近。"
+      ]
+    },
+    {
+      "selector": ".card-announcement, .announcement_content",
+      "text": [
+        "公告说：自建博客，有没有懂的。我把这句话念了三遍。",
+        "小站公告，不大声，但有态度。"
+      ]
+    },
+    {
+      "selector": ".card-recent-post, .aside-list-item",
+      "text": [
+        "侧边栏也放了最近更新，我帮它们排了个队。",
+        "从这里跳到另一篇文章很方便。"
+      ]
+    },
+    {
+      "selector": ".aside-list-item .title",
+      "text": [
+        "这篇是 <span>{text}</span>。",
+        "侧边栏里的文章入口，小小一枚。"
+      ]
+    },
+    {
+      "selector": ".card-archives a, .card-webinfo, .webinfo-item",
+      "text": [
+        "这些是小站的生长记录，数字会慢慢冒泡。",
+        "数字不大也没关系，重要的是一直写下去。"
+      ]
+    },
+    {
+      "selector": "#post-info, .post-title, #post-meta, .post-meta-date, .post-meta-categories",
+      "text": [
+        "文章标题、日期和分类都在这里，像配方的抬头。",
+        "先看标题，再决定今天要不要深潜。氧气瓶我没有。"
+      ]
+    },
+    {
+      "selector": "#card-toc, .toc-link, .toc-content",
+      "text": [
+        "目录是文章地图，迷路的时候看它。不要看我，我方向感一般。",
+        "点一下目录，可以直接跳到那一节。"
+      ]
+    },
+    {
+      "selector": "figure.highlight, .highlight-tools, .copy-button",
+      "text": [
+        "代码块可以复制，不过最好先看懂再粘贴。",
+        "这里是技术文章的工具箱，别把螺丝落进锅里。"
+      ]
+    },
+    {
+      "selector": ".post-copyright, .post-copyright a",
+      "text": [
+        "转载时记得带上来源，这不是小字，是护身符。",
+        "尊重创作，博客才会更有生命力。"
+      ]
+    },
+    {
+      "selector": ".post-meta__tags a, .tag_share a",
+      "text": [
+        "标签能把相近的文章串起来，像给瓶子系线。",
+        "这个标签也许能带你找到下一篇想读的。"
+      ]
+    },
+    {
+      "selector": ".pagination-post a, .pagination-related",
+      "text": [
+        "读完这一篇，还可以顺手翻到下一篇。我不催，真的。",
+        "文章之间也有自己的小路。"
+      ]
+    },
+    {
+      "selector": "#rightside-config, #rightside-config i",
+      "text": [
+        "这里藏着一些页面小开关，我没有偷偷乱按。",
+        "设置按钮，像博客边缘的小抽屉。"
+      ]
+    },
+    {
+      "selector": "#darkmode, #darkmode i",
+      "text": [
+        "亮一点，暗一点，都听你的。我只负责眨眼。",
+        "夜间模式对眼睛友好一点。"
+      ]
+    },
+    {
+      "selector": "#hide-aside-btn, #hide-aside-btn i",
+      "text": [
+        "想专心读文章，可以把侧边栏收起来。清场！",
+        "一键切换单栏和双栏。"
+      ]
+    },
+    {
+      "selector": "#go-up, #go-up i, #go-up span",
+      "text": [
+        "回到顶部，像把书翻回封面。咻。",
+        "要回到文章开头吗？"
+      ]
+    },
+    {
+      "selector": ".search-close-button, .local-search-input input, #local-search-results a",
+      "text": [
+        "搜索词越具体，越容易找到想看的东西。模糊咒语也不是不行。",
+        "搜索也是一种和过去的自己对话。"
+      ]
+    },
+    {
+      "selector": "#footer, #footer a, .footer_custom_text",
+      "text": [
+        "页脚写着：写博客，我是认真的。我作证。",
+        "到页脚啦，这一页快读完了。"
+      ]
+    }
+  ],
+  "click": [
+    {
+      "selector": "#live2d",
+      "text": [
+        "我在呢。药水还没糊。",
+        "别戳啦，去读文章。",
+        "如果挡住内容，可以直接拖我。轻点。",
+        "今天也要写点什么吗？我可以负责鼓掌。"
+      ]
+    },
+    {
+      "selector": "#search-button, #search-button .search, #search-button span, #search-button i",
+      "text": [
+        "搜索启动。希望你能找到想找的那篇。",
+        "关键词想好了吗？"
+      ]
+    },
+    {
+      "selector": ".copy-button",
+      "text": [
+        "代码复制好了，下一步是让它跑起来。",
+        "复制成功。现在轮到理解药效了。"
+      ]
+    }
+  ],
+  "seasons": [
+    {
+      "date": "01/01",
+      "text": "新的一年开始了。我调了一瓶勇气药水，先给博客倒一点。"
+    },
+    {
+      "date": "05/01",
+      "text": "劳动节快乐。写博客也是一种长期劳动，记得给自己放一小勺糖。"
+    },
+    {
+      "date": "06/01",
+      "text": "儿童节快乐。好奇心是最重要的材料之一。"
+    },
+    {
+      "date": "09/10",
+      "text": "教师节快乐。能把事情讲清楚的人，都该得到一朵小花。"
+    },
+    {
+      "date": "10/01",
+      "text": "国庆快乐。今天也适合留下一点记录，我把墨水瓶递过来。"
+    },
+    {
+      "date": "12/20-12/31",
+      "text": "一年快结束了，要不要写一篇年末复盘？我可以负责在旁边点头。"
+    }
+  ],
+  "time": [
+    {
+      "hour": "6-7",
+      "text": "早上好。晨光刚好，适合开一瓶清醒药水。"
+    },
+    {
+      "hour": "8-11",
+      "text": "上午好。适合读一点技术文章，也适合动手试试。"
+    },
+    {
+      "hour": "12-13",
+      "text": "中午了，先吃饭，再继续折腾。空腹炼金不可取。"
+    },
+    {
+      "hour": "14-17",
+      "text": "下午好。困的时候，就把问题拆小一点，再加一点耐心。"
+    },
+    {
+      "hour": "18-19",
+      "text": "傍晚好。今天的记录，有没有冒出一点小气泡？"
+    },
+    {
+      "hour": "20-21",
+      "text": "晚上好。适合慢慢读，也适合慢慢写。我把灯调暗一点。"
+    },
+    {
+      "hour": "22-23",
+      "text": "夜深了，写完这一点就休息吧。熬夜药水副作用很大。"
+    },
+    {
+      "hour": "0-5",
+      "text": "这么晚还在看博客？明天的你可能会举牌抗议。"
+    }
+  ],
+  "message": {
+    "default": [
+      "我在左下角陪你，不打扰，除非药水沸腾。",
+      "如果挡住内容，拖我一下就好。我很轻的，大概。",
+      "博客是慢慢写出来的，不用急，火候太大会糊。",
+      "这座小站还很年轻，但已经有自己的气味了。不是烧焦味。",
+      "要不要把今天踩过的坑也写下来？我负责在旁边递铲子。",
+      "读到有用的地方，可以先记一笔。记忆力药水还在实验中。",
+      "自建博客的好处是，所有细节都能长成自己的样子。"
+    ],
+    "console": "打开控制台了？小心，那里有博客的骨架和几瓶未标注药水。",
+    "copy": "复制好了。引用和转载时记得带上来源。",
+    "visibilitychange": "欢迎回来。刚才读到哪里了？我没有偷翻，真的。"
+  }
+}
