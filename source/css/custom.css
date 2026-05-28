@@ -500,16 +500,69 @@ blockquote {
 }
 
 @media (max-width: 768px) {
+  html,
+  body,
+  [data-theme="dark"] body {
+    background: #07171c !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #web_bg,
+  [data-theme="dark"] #web_bg {
+    background:
+      linear-gradient(180deg, rgba(7, 23, 28, 0.1), rgba(7, 23, 28, 0.82) 62%, #07171c),
+      var(--chiron-hero-image) center top / min(200vw, 820px) auto no-repeat !important;
+  }
+
+  #page-header {
+    background:
+      linear-gradient(180deg, rgba(7, 23, 28, 0.22), rgba(7, 23, 28, 0.58)),
+      var(--chiron-hero-image) center top / min(200vw, 820px) auto no-repeat,
+      #07171c !important;
+  }
+
   #page-header.full_page {
-    min-height: 460px;
+    height: min(70svh, 480px) !important;
+    min-height: 400px;
+  }
+
+  #page-header:not(.full_page) {
+    height: 240px;
+  }
+
+  .layout {
+    padding: 22px 10px;
+  }
+
+  #recent-posts .recent-post-item,
+  .card-widget,
+  #post,
+  #page {
+    border-color: rgba(216, 237, 231, 0.18);
+    box-shadow: 0 14px 32px rgba(4, 13, 17, 0.22);
+  }
+
+  #recent-posts .recent-post-item .post_cover {
+    height: clamp(160px, 48vw, 210px);
+  }
+
+  #recent-posts .recent-post-item > .recent-post-info {
+    padding: 18px 16px 24px;
   }
 
   #site-title {
-    font-size: 2rem;
+    font-size: clamp(1.85rem, 9vw, 2.4rem);
   }
 
   #site-subtitle {
     font-size: 1rem;
+  }
+
+  #aside-content {
+    margin-top: 16px;
   }
 
   .chiron-profile-grid,
@@ -542,26 +595,9 @@ blockquote {
     padding-left: 3rem;
   }
 
-  #waifu {
-    left: 0.1rem;
-    transform: translateY(3px) scale(0.72);
-  }
-
-  #live2d {
-    width: 300px;
-    height: 300px;
-  }
-
-  #waifu:hover {
-    transform: translateY(0) scale(0.72);
-  }
-
+  #waifu,
+  #waifu-tips,
   #waifu-toggle {
-    left: 0.1rem;
-  }
-
-  #waifu-tips {
-    margin-left: 0;
-    width: 220px;
+    display: none !important;
   }
 }
