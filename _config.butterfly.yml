@@ -288,7 +288,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text: '愿每一次记录，都让下一次出发更轻一点。'
+  custom_text: '写博客，我是认真的。'
 
 # --------------------------------------
 # Aside Settings
@@ -308,7 +308,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: 写代码，记生活，也整理长期问题。
+    description: 此人长期素食。
     button:
       enable: true
       icon: fab fa-github
@@ -316,7 +316,7 @@ aside:
       link: https://github.com/chiharonya
   card_announcement:
     enable: true
-    content: 这里正在持续生长：技术实践、阅读笔记、生活观察都会慢慢归档。
+    content: 自建博客，有没有懂的。
   card_recent_post:
     enable: true
     # If set 0 will show all
