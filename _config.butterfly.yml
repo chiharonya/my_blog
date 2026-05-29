@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: /images/site/logo.png
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
@@ -55,7 +55,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.ico
+favicon: /favicon-chiron-smooth.ico
 
 avatar:
   img: /images/site/avatar.jpg
@@ -1049,9 +1049,9 @@ lazyload:
 pwa:
   enable: false
   manifest:
-  apple_touch_icon:
-  favicon_32_32:
-  favicon_16_16:
+  apple_touch_icon: /images/site/logo-180.png
+  favicon_32_32: /images/site/logo-32.png
+  favicon_16_16: /images/site/logo-16.png
   mask_icon:
 
 # Open graph meta tags
@@ -1082,6 +1082,10 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
+    - <link rel="icon" href="/favicon-chiron-smooth.ico?v=20260530b" sizes="any">
+    - <link rel="icon" type="image/png" sizes="32x32" href="/images/site/logo-32.png?v=20260530b">
+    - <link rel="icon" type="image/png" sizes="16x16" href="/images/site/logo-16.png?v=20260530b">
+    - <link rel="apple-touch-icon" sizes="180x180" href="/images/site/logo-180.png?v=20260530b">
     - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     - <script defer src="/js/chiron-live2d.js"></script>
