@@ -10,11 +10,11 @@ tags:
   - Wrangler
   - 静态博客
 description: 一份从架构、技术栈、开源项目、部署流程到日常写作命令的博客搭建复盘。
-cover: /images/building-blog-cover.png
-top_img: /images/building-blog-cover.png
+cover: /images/building-blog-cover.jpg
+top_img: /images/building-blog-cover.jpg
 ---
 
-![博客搭建封面](/images/building-blog-cover.png)
+![博客搭建封面](/images/building-blog-cover.jpg)
 
 这篇文章不是一份“照着敲就完事”的零散命令记录，而是我给自己整理的一张建站地图：这个博客为什么这样搭、每一层承担什么职责、从本地写 Markdown 到线上访问中间发生了什么，以及以后我要新增文章、预览、构建、部署时该用哪些命令。
 
@@ -172,9 +172,9 @@ menu:
 站点默认头图和背景图：
 
 ```yaml
-default_top_img: /images/site/chiron-hero.jpg
-index_img: /images/site/chiron-hero.jpg
-background: /images/site/chiron-hero.jpg
+default_top_img: /images/site/chiron-hero-1800.jpg
+index_img: /images/site/chiron-hero-1800.jpg
+background: /images/site/chiron-hero-1800.jpg
 ```
 
 ## 本地开发

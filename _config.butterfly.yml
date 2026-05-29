@@ -65,10 +65,10 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: /images/site/chiron-hero.jpg
+default_top_img: /images/site/chiron-hero-1800.jpg
 
 # The banner image of index page
-index_img: /images/site/chiron-hero.jpg
+index_img: /images/site/chiron-hero-1800.jpg
 
 # The banner image of archive page
 archive_img:
@@ -95,7 +95,7 @@ footer_img: false
 # Website Background
 # Can set it to color, image URL or an array containing colors and/or image URLs
 # If an array is provided, a random background will be selected from the array on each load
-background: /images/site/chiron-hero.jpg
+background: /images/site/chiron-hero-1800.jpg
 
 cover:
   # Disable the cover or not
@@ -1035,9 +1035,9 @@ instantpage: false
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   # Use browser's native lazyload instead of vanilla-lazyload
-  native: false
+  native: true
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:

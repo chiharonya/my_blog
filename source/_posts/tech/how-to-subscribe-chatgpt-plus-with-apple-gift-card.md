@@ -10,11 +10,11 @@ tags:
   - 礼品卡
   - 订阅
 description: 一份通过 iPhone / iPad 的 App Store 购买 ChatGPT Plus 的实操笔记，记录美区、土耳其区礼品卡充值路径和需要提前知道的风险。
-cover: /images/chatgpt-subscription-apple-cover.png
-top_img: /images/chatgpt-subscription-apple-cover.png
+cover: /images/chatgpt-subscription-apple-cover.jpg
+top_img: /images/chatgpt-subscription-apple-cover.jpg
 ---
 
-![手机、礼品卡与订阅流程的抽象封面](/images/chatgpt-subscription-apple-cover.png)
+![手机、礼品卡与订阅流程的抽象封面](/images/chatgpt-subscription-apple-cover.jpg)
 
 这篇不是“唯一正确教程”，更像是一份给自己和朋友看的操作笔记：如果你手里有 Apple 设备，想通过 App Store 给 ChatGPT 开通会员，应该准备什么、怎么充值、哪里容易踩坑。
 
