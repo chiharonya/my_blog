@@ -86,7 +86,10 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+# Use front matter `updated` when present, otherwise fall back to `date`.
+# Avoid `mtime`: deployment/checkouts can refresh every Markdown file's mtime,
+# making all posts look updated at the newest build time.
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
